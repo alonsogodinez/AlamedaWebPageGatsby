@@ -1,10 +1,27 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Alameda WebPage
+WebPage powered by Gatsby, React/Redux and made with ♥
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+## Install
+
+Install Gatsby globally by running from your shell:
 ```
-gatsby new gatsby-example-site
+npm i gatsby -g
+
 ```
-## Deploy
+
+## Run for delevopement
+
+Assuming you are in the project folder (and you cloned o downloaded previously)
+
+```
+gatsby develop
+```
+
+## Run for production
+```
+gatsby build
+```
+
+## Deploy to Netlify (optional)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
