@@ -1,7 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
-
 import { toggleMenu } from "../actions/menuActions"
+import cx from 'classnames';
+import styles from '../css/header-styles.module.css'
 
 @connect((store) => {
   return {
@@ -20,15 +21,20 @@ export default class Header extends React.Component {
   render() {
     const { isToggleActive } = this.props;
 
-    if (!isToggleActive) {
-      return <button onClick={this.toggleMenu.bind(this)}>Activa el menu</button>
-    }
+    return (
 
+      <a
+          id="toggle-mobile-nav"
+          href="#!"
+          onClick={ this.toggleMenu.bind(this)}
+          className={cx({
+            [ styles["header__mobile-nav"] ]: true,
+            [ styles["is-active"] ]: isToggleActive
+          }) }
+      >
+        <span>Menu</span>
+      </a>
 
-    return <div>
-      <h1>Activado</h1>
-      <button onClick={this.toggleMenu.bind(this)}>Desactiva el menu</button>
-
-    </div>
-  }
+    )
+ }
 }

@@ -6,7 +6,6 @@ WebPage powered by Gatsby, React/Redux and made with ♥
 Install Gatsby globally by running from your shell:
 ```
 npm i gatsby -g
-
 ```
 
 ## Run for delevopement
