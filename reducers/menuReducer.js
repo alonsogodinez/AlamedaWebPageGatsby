@@ -1,7 +1,13 @@
 
 export default function reducer(state={
 
-  isToggleActive: false
+  isToggleActive: false,
+  items: [
+    {
+      title: "BIENVENIDO",
+      selected: true,
+    }
+  ]
 }, action) {
 
   switch (action.type) {

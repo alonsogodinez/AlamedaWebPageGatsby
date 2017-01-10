@@ -6,13 +6,10 @@ import styles from '../css/header-styles.module.css'
 
 @connect((store) => {
   return {
-    isToggleActive: store.menu.isToggleActive,
+    isToggleActive: store.menu.isToggleActive
   };
 })
 export default class Header extends React.Component {
-  componentWillMount() {
-
-  }
 
   toggleMenu() {
     this.props.dispatch(toggleMenu())
@@ -25,7 +22,7 @@ export default class Header extends React.Component {
 
       <a
           id="toggle-mobile-nav"
-          href="#!"
+          href="#"
           onClick={ this.toggleMenu.bind(this)}
           className={cx({
             [ styles["header__mobile-nav"] ]: true,
@@ -33,8 +30,8 @@ export default class Header extends React.Component {
           }) }
       >
         <span>Menu</span>
-      </a>
 
+      </a>
     )
  }
 }

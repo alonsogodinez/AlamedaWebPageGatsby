@@ -1,16 +1,31 @@
+//React
 import React from 'react'
-import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
-import '../css/markdown-styles'
 
+//Components
+import Headroom from 'react-headroom'
+import MenuToggle from '../components/MenuToggle'
+import NavMenu from '../components/NavMenu'
+import { Container } from 'react-responsive-grid'
+
+//Style
+import '../css/markdown-styles'
+import '../css/global.css'
+import HeaderStyles from '../css/header-styles.module.css'
+import cx from 'classnames'
 import { rhythm } from '../utils/typography'
 
+//import css for headroom
+import HeadRoomStyle from '../css/headroom.css'
 
-//ADAPTING REDUX
+
+
+
+//REDUX
 import { Provider } from "react-redux"
 import store from "../store"
+
 
 
 const Layout = (props) => (
@@ -19,29 +34,23 @@ const Layout = (props) => (
     { props.route.page.path != '/404/' &&
 
     <Headroom
-      wrapperStyle={{
-        marginBottom: rhythm(1),
-      }}
-      style={{
-        background: 'lightgray',
-      }}
+
+      style={HeadRoomStyle.headroom}
     >
       <Container
-        style={{
-          maxWidth: 960,
-          paddingTop: 0,
-          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-        }}
+        style= { {maxWidth: "100%"}}
+        className={cx({
+          [HeaderStyles.header]: true,
+          [HeaderStyles.cf]: true
+        }) }
       >
         <Link
           to={prefixLink('/')}
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
+          className= {HeaderStyles.header__logo}
         >
-          Gatsbyss!!!
         </Link>
+        <MenuToggle />
+        <NavMenu/>
       </Container>
     </Headroom>
 
@@ -49,13 +58,13 @@ const Layout = (props) => (
 
     <Container
       style={{
-        maxWidth: 960,
+
         padding: `${rhythm(1)} ${rhythm(3/4)}`,
         paddingTop: 0,
-
       }}
     >
       {props.children}
+
     </Container>
   </div>
 )
@@ -66,13 +75,10 @@ Layout.propTypes = {
 };
 
 
-
 module.exports = React.createClass({
   propTypes () {
     return {
       children: React.PropTypes.any
-
-
     }
   },
 

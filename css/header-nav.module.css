@@ -1,0 +1,76 @@
+/***
+* NAV OBJECT
+* ==========
+*
+* @name nav
+* @desc Horizontaly aligns items (nav, breadcrumbs, ...)
+* HTML: `ul.nav li` preferably, or `div.nav div.nav__item`
+*/
+
+.nav {
+
+  /* Reset list, just in case */
+  margin:0;
+  list-style:none;
+  color: #16242f;
+  font-size: 1.1em;
+}
+
+/* Clearfix the nav */
+.nav:before,
+.nav:after {
+  content:" ";
+  display:table;
+}
+
+.nav:after {
+  clear:both;
+}
+
+.nav {
+  *zoom:1;
+}
+
+.nav > li,
+.nav__item {
+  float:left;
+  vertical-align:middle;
+}
+
+.nav--center {
+  text-align:center;
+}
+
+.nav--center > li,
+.nav--center > .nav__item,
+.nav--right > li,
+.nav--right > .nav__item {
+  margin:0;
+}
+
+.nav--right {
+  text-align:right;
+}
+
+.nav--right > li,
+.nav--right > .nav__item,
+.nav--center > li,
+.nav--center > .nav__item {
+  display:inline-block;
+  float:none;
+
+  text-align:left;
+}
+
+/* Spaced */
+.nav--spaced {}
+
+.nav--spaced > li {
+  margin-right:15px;
+}
+
+.nav--spaced > li:last-child {
+  margin-right:0;
+}
+
+
