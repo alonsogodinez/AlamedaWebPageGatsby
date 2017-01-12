@@ -5,7 +5,7 @@
 }
 
 .headroom-wrapper {
-  margin-bottom: 8rem;
+  margin-bottom: 112px;
   height:0 !important; /* needed due bad calculation of the offset (height)
                           in wrapper component */
 }

@@ -9,6 +9,9 @@ import MenuToggle from '../components/MenuToggle'
 import NavMenu from '../components/NavMenu'
 import { Container } from 'react-responsive-grid'
 
+import { config } from 'config'
+import Helmet from 'react-helmet'
+
 //Style
 import '../css/markdown-styles'
 import '../css/global.css'
@@ -56,16 +59,16 @@ const Layout = (props) => (
 
     }
 
-    <Container
-      style={{
+    <Helmet
+      title={config.siteTitle}
+      meta={[
+        {"name": "description", "content": "Grupo Alameda SC"},
+        {"name": "keywords", "content": "imprenta, grupo alameda, imprenta tacna"},
+      ]}
+    />
 
-        padding: `${rhythm(1)} ${rhythm(3/4)}`,
-        paddingTop: 0,
-      }}
-    >
-      {props.children}
+    {props.children}
 
-    </Container>
   </div>
 )
 

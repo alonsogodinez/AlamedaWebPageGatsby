@@ -3,9 +3,25 @@
  * -
  */
 
+@font-face {
+  font-family: "Modelica";
+  src: url("../assets/BwModelicaSS01-Regular.otf");
+}
+@font-face {
+  font-family: "Modelica";
+  src: url("../assets/BwModelicaSS01-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Modelica";
+  src: url("../assets/BwModelicaSS01-Italic.otf");
+  font-style: italic;
+}
+
 html, body {
   background: #16242f;
   min-height: 100vh;
+  font-family: "Modelica", sans-serif;
 
 }
 
@@ -16,6 +32,9 @@ body {
   color: white;
 }
 
+li {
+  margin-bottom: 0;
+}
 img {
   display: block;
   max-width: 100%;

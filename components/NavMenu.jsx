@@ -41,15 +41,7 @@ export default class NavMenu extends React.Component {
           </Link>
 
         </li>
-        <li className={HeaderStyles["header__nav-item"]}>
-          <Link
-            to="/metodologia/"
-            activeClassName="{HeaderStyles.active}"
-          >
-            <span> METODOLOGÍA </span>
-          </Link>
 
-        </li>
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
             to="/habilidades/"
@@ -65,16 +57,6 @@ export default class NavMenu extends React.Component {
             activeClassName="{HeaderStyles.active}"
           >
             <span> PORTAFOLIO </span>
-          </Link>
-
-        </li>
-
-        <li className={HeaderStyles["header__nav-item"]}>
-          <Link
-            to="/conocenos/"
-            activeClassName="{HeaderStyles.active}"
-          >
-            <span> CONÓCENOS </span>
           </Link>
 
         </li>
