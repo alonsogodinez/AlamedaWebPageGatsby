@@ -7,14 +7,39 @@
  * Layout
  */
 .panel {
-  &.panel--intro{
-    height: calc(100vh - 112px);
+  & .panel--intro{
+
+
+  }
+  & .panel__content {
+    min-height: calc(100vh - 112px);
+    width: 100%;
+    background: url('../assets/panel--intro-logo.png') fixed center no-repeat;
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 50px);
+    background-size: 300px 400px;
+    background-attachment: fixed;
+
   }
 }
 
-.panel__content {
-  background: url('../assets/panel--intro-logo.png') fixed top center;
-  background-size: cover;
+
+
+@media screen and ( max-height: 600px ){
+  .panel {
+    & .panel__content {
+      min-height:450px;
+      height: 100%;
+      width: 100%;
+      background: url('../assets/panel--intro-logo.png')  center no-repeat;
+      background-size: 240px 320px;
+
+
+    }
+  }
+
+
+
 }
 
 

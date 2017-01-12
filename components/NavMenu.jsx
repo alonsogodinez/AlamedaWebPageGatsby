@@ -2,9 +2,10 @@ import React from 'react'
 
 import { connect } from "react-redux"
 import cx from 'classnames'
+import { prefixLink } from 'gatsby-helpers'
 
 //Components
-import {Link} from 'react-router'
+import {IndexLink, Link} from 'react-router'
 
 
 //Styles
@@ -23,7 +24,7 @@ export default class NavMenu extends React.Component {
 
 
   render() {
-    console.log("props", this.props)
+
     return (
 
       <ul
@@ -34,18 +35,18 @@ export default class NavMenu extends React.Component {
         }) }
       >
         <li className={HeaderStyles["header__nav-item"]}>
-          <Link
-            to="/bienvenido/"
+          <IndexLink
+            to={prefixLink("/")}
             activeClassName={HeaderStyles.active}
           >
             <span> BIENVENIDO </span>
-          </Link>
+          </IndexLink>
 
         </li>
 
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
-            to="/habilidades/"
+            to={prefixLink("/habilidades/")}
             activeClassName={HeaderStyles.active}
           >
             <span> HABILIDADES </span>
@@ -54,7 +55,7 @@ export default class NavMenu extends React.Component {
         </li>
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
-            to="/portafolio/"
+            to={prefixLink("/portafolio/")}
             activeClassName={HeaderStyles.active}
           >
             <span> PORTAFOLIO </span>
@@ -64,7 +65,7 @@ export default class NavMenu extends React.Component {
 
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
-            to="/contactanos/"
+            to={prefixLink("/contactanos/")}
             activeClassName={HeaderStyles.active}
           >
             <span> CONTÁCTANOS </span>

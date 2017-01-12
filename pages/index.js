@@ -24,9 +24,6 @@ export default class Index extends React.Component {
 
         <div className={styles["panel__content"]}>
 
-
-
-
           {/* EXTRA ICONS AND LINES
           <div className={styles["video-hp__icons"]}
                //style="top: 287.96px; margin-top: -215px; margin-left: -383px; width: 767.893px; height: 431.94px;"
@@ -101,6 +98,43 @@ export default class Index extends React.Component {
            */}
 
         </div>
+
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div><div>
+        <h1>sadfasf</h1>
+      </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+        <div>
+          <h1>sadfasf</h1>
+        </div>
+
 
       </section>
 
