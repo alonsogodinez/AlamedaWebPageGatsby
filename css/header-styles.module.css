@@ -109,15 +109,17 @@
     transition:all 0.35s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
-.header__nav-item.active a:before {
-    height:140%;
+
+
+.header__nav-item a.active:before {
+  height:140%;
 }
 
-.header__nav-item.active a {
-    color: #e6534e;
-    -webkit-transition-duration:0.4s;
-    -o-transition-duration:0.4s;
-    transition-duration:0.4s;
+.header__nav-item a.active {
+  color: #e6534e;
+  -webkit-transition-duration:0.4s;
+  -o-transition-duration:0.4s;
+  transition-duration:0.4s;
 }
 
 .header__nav-item a{

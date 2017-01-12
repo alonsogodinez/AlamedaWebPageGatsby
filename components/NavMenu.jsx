@@ -6,6 +6,7 @@ import cx from 'classnames'
 //Components
 import {Link} from 'react-router'
 
+
 //Styles
 import HeaderNav from '../css/header-nav.module.css'
 import HeaderStyles from '../css/header-styles.module.css'
@@ -17,7 +18,7 @@ import HeaderStyles from '../css/header-styles.module.css'
   return {
     isToggleActive: store.menu.isToggleActive
   };
-})
+},null, null,{pure:false})
 export default class NavMenu extends React.Component {
 
 
@@ -35,7 +36,7 @@ export default class NavMenu extends React.Component {
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
             to="/bienvenido/"
-            activeClassName="{HeaderStyles.active}"
+            activeClassName={HeaderStyles.active}
           >
             <span> BIENVENIDO </span>
           </Link>
@@ -45,7 +46,7 @@ export default class NavMenu extends React.Component {
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
             to="/habilidades/"
-            activeClassName="{HeaderStyles.active}"
+            activeClassName={HeaderStyles.active}
           >
             <span> HABILIDADES </span>
           </Link>
@@ -54,7 +55,7 @@ export default class NavMenu extends React.Component {
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
             to="/portafolio/"
-            activeClassName="{HeaderStyles.active}"
+            activeClassName={HeaderStyles.active}
           >
             <span> PORTAFOLIO </span>
           </Link>
@@ -64,7 +65,7 @@ export default class NavMenu extends React.Component {
         <li className={HeaderStyles["header__nav-item"]}>
           <Link
             to="/contactanos/"
-            activeClassName="{HeaderStyles.active}"
+            activeClassName={HeaderStyles.active}
           >
             <span> CONTÁCTANOS </span>
           </Link>
