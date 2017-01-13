@@ -13,9 +13,12 @@ const productionMiddlewares = [
   thunk
 ];
 
-const developmentMiddlewares = productionMiddlewares.join(
+const developmentMiddlewares = [
+  ...productionMiddlewares,
   logger()
-)
+];
+
+
 
 const middlewares = isProduction ? productionMiddlewares
                                  : developmentMiddlewares
