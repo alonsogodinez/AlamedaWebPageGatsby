@@ -7,16 +7,13 @@
  * Layout
  */
 .panel {
-  & .panel--intro{
 
-
-  }
   & .panel__content {
     position:relative;
     min-height: calc(100vh - 112px);
     width: 100%;
-    background: url('../assets/panel--intro-logo.png') no-repeat  50% calc(50% - 55px );
-    background-size: 330px 440px;
+    background: url('../assets/panel--intro-logo.png') no-repeat  50% calc(50% - 26px );
+    background-size: 265px;
 
 
   }
@@ -25,8 +22,8 @@
 @media screen and ( min-width: 1500px )  {
   .panel {
     & .panel__content {
-      min-height: 928px;
-      background-size: 480px 640px;
+      min-height: 768px;
+      background-size: 300px;
     }
   }
 }
@@ -34,7 +31,7 @@
 @media screen and ( min-width: 1000px )and  ( max-width: 1499px ) {
   .panel {
     & .panel__content {
-      background-size: 330px 480px;
+      background-size: 285px;
     }
   }
 }
@@ -43,7 +40,7 @@
   .panel {
     & .panel__content {
       max-height: 500px;
-      background-size: 300px 400px;
+      background-size: 270px;
     }
   }
 }
@@ -51,7 +48,7 @@
 @media screen and ( max-width: 400px ){
   .panel {
     & .panel__content {
-      background-size: 270px 360px;
+      background-size: 230px;
     }
   }
 }
@@ -59,7 +56,7 @@
 @media screen and ( max-height: 680px ){
   .panel {
     & .panel__content {
-      background-size: 240px 320px;
+      /*background-size: 220px 320px;*/
     }
   }
 }
@@ -71,7 +68,7 @@
       height: 100%;
       width: 100%;
       background: url('../assets/panel--intro-logo.png')  center no-repeat;
-      background-size: 240px 320px;
+      background-size: 250px;
 
       &:after{
         max-height: 0;

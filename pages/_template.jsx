@@ -62,7 +62,7 @@ const Layout = (props) => (
     <Helmet
       title={config.siteTitle}
       meta={[
-        {"name": "description", "content": "Grupo Alameda SC"},
+        {"name": "description", "content": "Grupo Alameda SAC"},
         {"name": "keywords", "content": "imprenta, grupo alameda, imprenta tacna"},
       ]}
     />

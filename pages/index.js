@@ -9,9 +9,8 @@ import cx from 'classnames'
 import styles from '../css/panel.module.css'
 
 
+class PanelIntro extends React.Component {
 
-
-export default class Index extends React.Component {
   render () {
     return (
 
@@ -25,7 +24,6 @@ export default class Index extends React.Component {
         <div className={styles["panel__content"]}>
 
           <div className={styles["intro__icons"]}
-               //style="top: 287.96px; margin-top: -215px; margin-left: -383px; width: 767.893px; height: 431.94px;"
           >
             <div className={styles["intro__line"]}></div>
 
@@ -96,22 +94,43 @@ export default class Index extends React.Component {
 
 
         </div>
+      </section>
 
-        <div style={{
-          background: '#fff',
-          height: '300px',
-          color: 'black',
-          padding: "4em",
-          display: "flex",
-          textAlign: "center"
-
-        }}></div>
+    )
+  }
+}
 
 
+class PanelWe extends React.Component {
+
+  render () {
+    return (
+
+      <section className={cx({
+        [styles.panel]: true,
+        [styles["panel--we"]]: true
+      })}>
+
+        <div className={styles["panel__content"]}>
+          <h2> HOLA </h2>
+        </div>
 
       </section>
 
     )
+  }
+}
+
+export default class Index extends React.Component {
+  render(){
+    return(
+    <div>
+      <PanelIntro/>
+      {/*<PanelWe/>*/}
+    </div>
+
+    )
+
   }
 }
 
