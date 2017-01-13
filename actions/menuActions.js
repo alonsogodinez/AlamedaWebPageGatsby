@@ -4,3 +4,14 @@ export function toggleMenu() {
     type: "TOGGLE_MENU",
   }
 }
+
+
+export function hideMenu(isActive){
+
+  if(isActive) {
+    return {
+      type: "HIDE_MENU"
+    }
+  }
+
+}

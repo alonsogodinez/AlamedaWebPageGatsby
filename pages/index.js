@@ -24,116 +24,89 @@ export default class Index extends React.Component {
 
         <div className={styles["panel__content"]}>
 
-          {/* EXTRA ICONS AND LINES
-          <div className={styles["video-hp__icons"]}
+          <div className={styles["intro__icons"]}
                //style="top: 287.96px; margin-top: -215px; margin-left: -383px; width: 767.893px; height: 431.94px;"
           >
-            <div className={styles["video-hp__line"]}></div>
+            <div className={styles["intro__line"]}></div>
 
             <div className={cx({
-              [styles["video-hp__shard "]]: true,
-              [styles["video-hp__shard--1"]]: true
+              [styles["intro__shard"]]: true,
+              [styles["intro__shard--1"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__shard "]]: true,
-              [styles["video-hp__shard--2"]]: true
+              [styles["intro__shard"]]: true,
+              [styles["intro__shard--2"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__circle "]]: true,
-              [styles["video-hp__circle--1"]]: true
+              [styles["intro__circle"]]: true,
+              [styles["intro__circle--1"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__circle "]]: true,
-              [styles["video-hp__circle--2"]]: true
+              [styles["intro__circle"]]: true,
+              [styles["intro__circle--2"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__circle "]]: true,
-              [styles["video-hp__circle--3"]]: true
+              [styles["intro__circle"]]: true,
+              [styles["intro__circle--3"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__circle "]]: true,
-              [styles["video-hp__circle--4"]]: true
+              [styles["intro__circle"]]: true,
+              [styles["intro__circle--4"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__circle "]]: true,
-              [styles["video-hp__circle--5"]]: true
+              [styles["intro__circle"]]: true,
+              [styles["intro__circle--5"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__stroke "]]: true,
-              [styles["video-hp__stroke--1"]]: true
+              [styles["intro__stroke"]]: true,
+              [styles["intro__stroke--1"]]: true
             }) }>
 
             </div>
 
             <div className={cx({
-              [styles["video-hp__stroke "]]: true,
-              [styles["video-hp__stroke--2"]]: true
+              [styles["intro__stroke"]]: true,
+              [styles["intro__stroke--2"]]: true
             }) }>
 
             </div>
 
           </div>
 
-           */}
 
         </div>
 
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div><div>
-        <h1>sadfasf</h1>
-      </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
-        <div>
-          <h1>sadfasf</h1>
-        </div>
+        <div style={{
+          background: '#fff',
+          height: '300px',
+          color: 'black',
+          padding: "4em",
+          display: "flex",
+          textAlign: "center"
+
+        }}></div>
+
 
 
       </section>
