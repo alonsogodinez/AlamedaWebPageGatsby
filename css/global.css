@@ -5,16 +5,16 @@
 
 @font-face {
   font-family: "Modelica";
-  src: url("../assets/BwModelicaSS01-Regular.otf");
+  src: url("../pages/assets/BwModelicaSS01-Regular.otf");
 }
 @font-face {
   font-family: "Modelica";
-  src: url("../assets/BwModelicaSS01-Bold.otf");
+  src: url("../pages/assets/BwModelicaSS01-Bold.otf");
   font-weight: bold;
 }
 @font-face {
   font-family: "Modelica";
-  src: url("../assets/BwModelicaSS01-Italic.otf");
+  src: url("../pages/assets/BwModelicaSS01-Italic.otf");
   font-style: italic;
 }
 

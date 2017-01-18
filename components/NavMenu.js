@@ -28,7 +28,6 @@ import HeaderStyles from '../css/header-styles.module.css'
 )
 
 
-
 export default class NavMenu extends React.Component {
 
   hideMenu(){
@@ -81,7 +80,6 @@ export default class NavMenu extends React.Component {
           >
             <span> PORTAFOLIO </span>
           </Link>
-
         </li>
 
         <li className={HeaderStyles["header__nav-item"]}>
