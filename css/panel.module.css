@@ -8,13 +8,16 @@
  */
 .panel.panel--intro {
 
+  &.panel--home .panel__content{
+    background: url('../pages/assets/panel--intro-logo.png') no-repeat 50% calc(50% - 50px);
+    background-size: 265px;
+  }
+
+
   & .panel__content {
     position: relative;
     min-height: calc(100vh - 112px);
     width: 100%;
-    background: url('../pages/assets/panel--intro-logo.png') no-repeat 50% calc(50% - 50px);
-    background-size: 265px;
-
   }
 }
 
@@ -22,7 +25,7 @@
 
 @media screen and ( min-width: 1500px ) {
   .panel.panel--intro {
-    & .panel__content {
+    &.panel--home .panel__content {
       min-height: 768px;
       background-size: 300px;
     }
@@ -31,7 +34,7 @@
 
 @media screen and ( min-width: 1000px )and  ( max-width: 1499px ) {
   .panel.panel--intro {
-    & .panel__content {
+    &.panel--home .panel__content {
       background-size: 285px;
     }
   }
@@ -39,7 +42,7 @@
 
 @media screen and ( max-width: 768px ) {
   .panel.panel--intro {
-    & .panel__content {
+    &.panel--home .panel__content {
       max-height: 500px;
       background-size: 270px;
     }
@@ -48,7 +51,7 @@
 
 @media screen and ( max-width: 400px ) {
   .panel.panel--intro {
-    & .panel__content {
+    &.panel--home .panel__content {
       background-size: 230px;
     }
   }
@@ -56,7 +59,7 @@
 
 @media screen and ( max-height: 680px ) {
   .panel.panel--intro {
-    & .panel__content {
+    &.panel--home .panel__content {
       /*background-size: 220px 320px;*/
     }
   }
@@ -64,12 +67,16 @@
 
 @media screen and ( max-height: 600px ) {
   .panel.panel--intro {
+
+    &.panel--home .panel__content{
+      background: url('../pages/assets/panel--intro-logo.png') center no-repeat;
+      background-size: 250px;
+    }
+
     & .panel__content {
       min-height: 450px;
       height: 100%;
       width: 100%;
-      background: url('../pages/assets/panel--intro-logo.png') center no-repeat;
-      background-size: 250px;
 
       &:after {
         max-height: 0;
@@ -202,6 +209,32 @@
     }
 
   }
+}
+
+/*
+ *  Panel Skills
+ */
+
+.panel--skills .panel__content{
+  background: url('../pages/assets/intro-bg--skills.png') no-repeat 50% calc(50% - 50px);
+  background-size: 265px;
+  display:flex;
+  align-items: center;
+  padding-top: 12em;
+  justify-content:center;
+
+  & h2{
+    text-align: center;
+    vertical-align: center;
+    color: #bababa;
+
+    font-size: 3em;
+  }
+}
+
+.skill__layout{
+
+  height:100%;
 }
 
 

@@ -1,16 +1,16 @@
-.footer{
+.footer {
   background: #fff;
-  z-index:1;
+  z-index: 1;
 
-  & .footer__quote{
+  & .footer__quote {
     padding: 4em 2.5em;
     background: url(../pages/assets/bg--footer-quote-1.png) no-repeat 50% 50%,
-                url(../pages/assets/bg--footer-quote-2.png) repeat 50% 0;
+    url(../pages/assets/bg--footer-quote-2.png) repeat 50% 0;
     text-align: center;
     font-size: 1.3em;
-    
-    & span{
-      line-height:2;
+
+    & span {
+      line-height: 2;
       display: block;
     }
 
@@ -25,7 +25,6 @@
       font-family: Gentona-Bold, arial, sans-serif;
       margin: 0px 0px -0.1em;
     }
-
 
   }
 
@@ -57,13 +56,19 @@
 
     }
 
-    & .footer__info-content{
+    & .footer__info-content {
       padding: 20px 0 !important;
       border-top: 1px solid #bebebe;
       font-size: 14px;
-      display:flex;
+      display: flex;
       justify-content: space-between;
       color: #16242f;
+
+      @media screen and ( max-width: 800px ) {
+        & {
+          flex-direction: column;
+        }
+      }
 
       & .footer__info-title {
         margin: 8px 0 16px;
@@ -73,12 +78,22 @@
         padding-bottom: .5em;
       }
 
-
-      & .col.footer-social{
+      & .col.footer-social {
         padding-left: 5em;
         text-align: center;
 
-        & .social-list{
+        @media screen and (max-width: 550px) {
+          & .footer__info-title {
+            margin-left: calc(50% - 175px);
+            text-align: left;
+            justify-content: center;
+          }
+        }
+        @media screen and (max-width: 800px ) {
+          padding-left: 0;
+        }
+
+        & .social-list {
           list-style: none;
           margin-left: auto;
           margin-right: auto;
@@ -87,14 +102,20 @@
           align-items: center;
           justify-content: center;
 
+          @media screen and (max-width: 550px) {
 
+            margin-left: calc(50% - 175px);
+            text-align: left;
+            justify-content: flex-start;
 
-          & li{
+          }
+
+          & li {
             margin-left: 12px;
             margin-right: 12px;
             margin-bottom: 25px;
 
-            & a{
+            & a {
               position: relative;
               width: 44px;
               height: 44px;
@@ -109,7 +130,7 @@
               font-size: 30px;
               text-align: center;
 
-              &:before{
+              &:before {
                 position: absolute;
                 left: 44px;
                 top: 44px;
@@ -120,13 +141,12 @@
                 transition: all .35s cubic-bezier(0.770, 0.000, 0.175, 1.000);
               }
 
-
-              &:hover{
+              &:hover {
                 color: #fff;
 
-                &:before{
-                  top:0;
-                  left:0;
+                &:before {
+                  top: 0;
+                  left: 0;
                 }
               }
 
@@ -136,21 +156,49 @@
                 top: -1px;
                 transform: rotate(-45deg);
               }
-
             }
           }
-
         }
       }
 
-      & .col.footer__address{
+      & .col.footer__address {
         padding-right: 5em;
         text-align: right;
+
+
+
+        @media screen and (max-width: 800px ) {
+          padding-right: 0;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 550px) {
+
+          margin-left: calc(50% - 175px);
+          text-align: left;
+          justify-content: flex-start;
+
+        }
+
+          & address {
+            text-align: left;
+            margin-left: calc(50% - 135px);
+            margin-right: auto;
+
+            @media screen and (max-width: 550px) {
+
+              margin-left: 0;
+              text-align: left;
+              justify-content: flex-start;
+
+            }
+
+          }
+
       }
     }
 
   }
-
 
   & .footer__bottom {
     height: 100px;
@@ -161,21 +209,20 @@
     text-align: center;
     color: #898d95;
 
-    & .content{
-      display:flex;
-      height:100%;
+    & .content {
+      display: flex;
+      height: 100%;
       align-items: center;
       justify-content: space-between;
-      padding: 0 3em ;
-      @media all and (max-width:580px){
+      padding: 0 3em;
+      @media all and (max-width: 580px) {
+        padding-top: 2em;
         flex-direction: column;
-        padding-bottom: 3em;
+        padding-bottom: 2em;
       }
 
     }
   }
-
-  
 
 }
 

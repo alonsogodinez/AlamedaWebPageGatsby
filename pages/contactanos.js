@@ -1,9 +1,14 @@
 import React from 'react'
+import {Footer} from '../components'
 
 export default class Contactanos extends React.Component {
   render() {
     return (
-      <h1> Contactanos </h1>
+      <div>
+        <h1> Contactanos </h1>
+        <Footer/>
+      </div>
+
     )
   }
 
