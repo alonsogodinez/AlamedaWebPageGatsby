@@ -1,0 +1,55 @@
+.footer{
+  background: #fff;
+  z-index:1;
+
+  & .footer__quote{
+    padding: 4em 2.5em;
+    background: url(../pages/assets/bg--footer-quote-1.png) no-repeat 50% 50%,
+                url(../pages/assets/bg--footer-quote-2.png) repeat 50% 0;
+    background-color: #1d2b35;
+    text-align: center;
+    font-size: 1.3em;
+    
+    & span{
+      line-height:2;
+      display: block;
+    }
+
+    & p:first-child::before {
+      content: "“";
+      display: block;
+      color: rgb(255, 100, 100);
+      font-size: 98px;
+      line-height: 0.4em;
+      font-weight: bolder;
+      padding-bottom: .1em;
+      font-family: Gentona-Bold, arial, sans-serif;
+      margin: 0px 0px -0.1em;
+    }
+
+
+  }
+
+  & .footer__bottom {
+    height: 100px;
+    overflow: hidden;
+    background: #16242f;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #898d95;
+
+    & .content{
+      display:flex;
+      height:100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3em ;
+    }
+  }
+
+  
+
+}
+
+
