@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
           <div className={styles["footer__info-content"]}>
 
             <div className={cx({
-              [styles.col]:true,
+              [styles.col]: true,
               [styles["footer-social"]]: true
             })}>
 
@@ -45,25 +45,26 @@ export default class Footer extends React.Component {
                 <li>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/MountainviewAgency"
+                    href="https://www.facebook.com/grupoalamedaperu"
                     className="facebook ext">
-                    <FaFacebook  className={styles.icon}/>
+                    <FaFacebook className={styles.icon}/>
                   </a>
                 </li>
 
                 {/*<li>*/}
-                  {/*<a*/}
-                    {/*target="_blank"*/}
-                    {/*href="https://twitter.com/Mountainview_be"*/}
-                    {/*className="twitter ext">*/}
-                    {/*<FaTwitter className={styles.icon}/>*/}
-                  {/*</a>*/}
+                {/*<a*/}
+                {/*target="_blank"*/}
+                {/*href="https://twitter.com/Mountainview_be"*/}
+                {/*className="twitter ext">*/}
+                {/*<FaTwitter className={styles.icon}/>*/}
+                {/*</a>*/}
 
                 {/*</li>*/}
 
               </ul>
 
             </div>
+
             <div className={cx({
               [styles.col]: true,
               [styles["footer__address"]]: true
@@ -95,7 +96,7 @@ export default class Footer extends React.Component {
 
       </footer>
 
-  )
+    )
   }
 
-  }
+}
