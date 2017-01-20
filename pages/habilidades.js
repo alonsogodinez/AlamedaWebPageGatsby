@@ -1,20 +1,19 @@
 import React from 'react'
 
 import {Footer, PanelIntroSkills, PanelSkill} from '../components'
+import { prefixLink } from 'gatsby-helpers'
 
 export default class Habilidades extends React.Component {
 
   skills = [
     {
       title: "Digital Strategy",
-      description: "Digital strategy is at the heart of our mission and represents all our projects. " +
+      description: "Digital strategy is at the heart of our mission and represents all our projects." +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#ff6464",
-      image: "url"
+      image: prefixLink("/./assets/skill-1.jpg")
     },
 
     {
@@ -22,11 +21,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#fff",
-      image: "url"
+      image: prefixLink("/./assets/skill-2.jpg")
     },
 
     {
@@ -34,11 +31,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#135758",
-      image: "url"
+      image: prefixLink("/./assets/skill-3.jpg")
     },
 
     {
@@ -46,11 +41,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#efbe4b",
-      image: "url"
+      image: prefixLink("/./assets/skill-4.jpg")
     },
 
     {
@@ -58,11 +51,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#16242f",
-      image: "url"
+      image: prefixLink("/./assets/skill-5.jpg")
     },
 // note: it starts again
     {
@@ -70,11 +61,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
+      "especially for consumers.",
       background: "#ff6464",
-      image: "url"
+      image: prefixLink("/./assets/skill-6.jpg")
     },
 
     {
@@ -82,11 +71,9 @@ export default class Habilidades extends React.Component {
       description: "Digital strategy is at the heart of our mission and represents all our projects. " +
       "To do this, we have developed a unique approach combining user knowledge, brand message, competitive vision, " +
       "and also consumer experience. Our objective is to propose a relevant approach for the brand including and " +
-      "especially for consumers. For us, strategy is not an overused term but provides clear and coherent direction " +
-      "to all digital approaches to a brand. This enables us to put forward a relevant approach for each project " +
-      "assigned to us and to define a clear role for digital aspects of their communications.",
-      background: "#fff",
-      image: "url"
+      "especially for consumers.",
+      background: "#ebebeb",
+      image: prefixLink('/./assets/skill-7.jpg')
     }
 
   ];

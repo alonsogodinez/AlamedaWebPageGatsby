@@ -8,11 +8,10 @@
  */
 .panel.panel--intro {
 
-  &.panel--home .panel__content{
+  &.panel--home .panel__content {
     background: url('../pages/assets/panel--intro-logo.png') no-repeat 50% calc(50% - 50px);
     background-size: 265px;
   }
-
 
   & .panel__content {
     position: relative;
@@ -68,7 +67,7 @@
 @media screen and ( max-height: 600px ) {
   .panel.panel--intro {
 
-    &.panel--home .panel__content{
+    &.panel--home .panel__content {
       background: url('../pages/assets/panel--intro-logo.png') center no-repeat;
       background-size: 250px;
     }
@@ -123,7 +122,6 @@
   }
 }
 
-
 /*
  * Panel We
  */
@@ -135,7 +133,7 @@
 
   }
 
-  & .panel__decorated-title{
+  & .panel__decorated-title {
 
     margin: 0 0 .9em;
     padding: 40px 0 35px;
@@ -147,63 +145,55 @@
     text-align: center;
 
   }
-  & .panel__description-layout{
+  & .panel__description-layout {
 
     display: flex;
     justify-content: center;
     flex-direction: row;
 
-    @media all and (max-width: 800px){
+    @media all and (max-width: 800px) {
       flex-direction: column;
     }
 
-    & .col{
+    & .col {
       width: 100%;
       color: #16242f;
 
-      &:first-child{
-        flex:1;
+      &:first-child {
+        flex: 1;
         padding-right: 4em;
 
-        @media all and (max-width: 800px){
+        @media all and (max-width: 800px) {
           flex: 1;
           justify-content: center;
           padding-right: 0;
         }
       }
 
-      &:last-child{
+      &:last-child {
         display: flex;
         justify-content: flex-end;
         flex: .65;
 
-        @media all and (max-width: 800px){
+        @media all and (max-width: 800px) {
           flex: 1;
           justify-content: center;
           padding-top: 2em;
-        }
-
-        @media all and (min-width: 860px){
-          flex: .55;
-        }
-
-        @media all and (min-width: 960px){
-          flex: .45;
-        }
-
-        @media all and (min-width: 1060px){
-          flex: .4;
-        }
+        } @media all and (min-width: 860px) {
+        flex: .55;
+      } @media all and (min-width: 960px) {
+        flex: .45;
+      } @media all and (min-width: 1060px) {
+        flex: .4;
+      }
 
       }
 
-
-
-      & img{
+      & img {
         max-height: 350px;
       }
 
-      & p{
+      & p {
         text-align: justify;
       }
     }
@@ -215,15 +205,15 @@
  *  Panel Skills
  */
 
-.panel--skills .panel__content{
+.panel--skills.panel--intro .panel__content {
   background: url('../pages/assets/intro-bg--skills.png') no-repeat 50% calc(50% - 50px);
   background-size: 265px;
-  display:flex;
+  display: flex;
   align-items: center;
   padding-top: 12em;
-  justify-content:center;
+  justify-content: center;
 
-  & h2{
+  & h2 {
     text-align: center;
     vertical-align: center;
     color: #bababa;
@@ -232,29 +222,86 @@
   }
 }
 
-.skill__layout{
+.panel--skills {
 
-  height:100%;
+  & .skill__layout {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 4em 2.2em;
+
+    & h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 3em;
+    }
+    & img {
+      width: 100%;
+    }
+
+    & .col {
+      width: 100%;
+
+      &:first-child {
+        flex: .6;
+        @media all and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        flex: .4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1em;
+
+        & p:last-child {
+          margin-bottom: 0;
+        }
+
+        @media all and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+    }
+
+  }
+
+  &:nth-child(3),
+  &:nth-child(8) {
+    & h2, & * {
+      color: #16242f;
+    }
+
+  }
+
+  &:nth-child(2n+1) {
+    & .col:first-child {
+      padding-right: 2em;
+      flex: .6;
+      order: 2;
+    }
+  }
 }
-
 
 /*
  * Panel Clients
  */
 
-.panel.panel--clients{
+.panel.panel--clients {
   background: #ff6464;
-
 
   & .panel__content {
     padding: 4em 2em;
 
-    & .portfolio-link{
+    & .portfolio-link {
 
       position: relative;
       margin: -10px auto 0;
       display: table;
-      padding: 1em  0 0;
+      padding: 1em 0 0;
       font-weight: 400;
       font-size: 1.1em;
       text-transform: uppercase;
@@ -263,18 +310,18 @@
       border-bottom: 0;
 
       /*&:before{*/
-        /*height: 0;*/
-        /*displayblock*/
-        /*width: 100%;*/
-        /*background: transparent;*/
-        /*transition: height .5s ease, background-color .5s ease;*/
-        /*content: ' ';*/
+      /*height: 0;*/
+      /*displayblock*/
+      /*width: 100%;*/
+      /*background: transparent;*/
+      /*transition: height .5s ease, background-color .5s ease;*/
+      /*content: ' ';*/
       /*}*/
-      &:hover:after{
+      &:hover:after {
 
         width: calc(100%);
       }
-      &:after{
+      &:after {
         text-decoration: none;
         display: block;
         border-bottom: 2px solid transparent;
@@ -282,50 +329,44 @@
         background: #f5f5f5;
         transition: 0.5s ease;
         white-space: nowrap;
-        content:""
+        content: ""
       }
 
-      & .icon{
+      & .icon {
         margin-left: .5em;
 
       }
     }
 
-
-    & .client-list{
+    & .client-list {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
       margin-left: 0;
-      & .client-container{
+      & .client-container {
         padding: 1.25%;
         width: 20%;
 
-        @media all and (max-width:800px){
-          width: calc(100%/3);
+        @media all and (max-width: 800px) {
+          width: calc(100% / 3);
         }
 
-        & .client{
+        & .client {
           display: block;
-          border: 1px solid rgba(255,255,255,.4);
+          border: 1px solid rgba(255, 255, 255, .4);
           padding: 0 12%;
 
-          & img{
+          & img {
             margin: auto;
           }
 
         }
       }
 
-
-
-
     }
   }
 
-
 }
-
 
 /*´
  * Icons
